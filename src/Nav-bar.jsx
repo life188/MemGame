@@ -17,29 +17,17 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-800 text-white z-50">
+    <nav className="fixed top-0 left-0 w-full bg-blue-300 text-black z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="text-lg font-semibold">
-          Apex Auto Care
+          WordHop
         </Link>
         <div className="space-x-6">
           <button
-            onClick={() => handleNavClick("home")}
+            onClick={() => handleNavClick("how-to-play")}
             className="hover:underline focus:outline-none"
           >
-            Home
-          </button>
-          <button
-            onClick={() => handleNavClick("services")}
-            className="hover:underline focus:outline-none"
-          >
-            Services
-          </button>
-          <button
-            onClick={() => handleNavClick("contact")}
-            className="hover:underline focus:outline-none"
-          >
-            Contact
+            How To Play
           </button>
         </div>
       </div>
